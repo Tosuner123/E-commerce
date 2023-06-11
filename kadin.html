@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="navbar-footer.css">
+    <script src="https://kit.fontawesome.com/8c025b47e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+   
+    
+    
+    <title>Kadın</title>
+    <style>
+       /* sidebar */
+
+body{
+    color: grey;
+}
+hr{
+    width: 100%;
+    color: firebrick;
+    
+    
+}
+p{
+    color: black;
+}
+li{
+    color: black;
+}
+#sidebar{
+    width: 10%;
+    padding: 200px 0;
+    margin: 90px;
+    float: left;
+    position: relative;
+    right: 80px;
+    bottom: 90px;
+    
+    
+}
+
+
+/* sidebar finish */
+.hov-res img:hover{
+    width: 265px !important ;
+    height: 400px; 
+
+}
+ /* shopping-cart */
+ .cart-sidebar {
+  background-color: #faf0e6d1;
+  position: absolute;
+  right: 0;
+  top: 200px;
+  bottom: 0;
+  width: 350px;
+  height:300px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  overflow: auto;
+  
+  
+
+}
+.cart-header h3 {
+  margin: 0;
+  
+}
+
+.cart-header button {
+  float: right;
+  
+}
+
+.cart-footer {
+  text-align: right;
+  margin-top: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+   <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+    <div class = "container">
+        <a class = "navbar-logo d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+            <img id="myImage" class="nav-logo" src = "img/logo.jpg" alt = "site icon">
+           
+        </a>
+
+        <div class = "order-lg-2 nav-btns d-sm-none d-lg-flex ">
+            <button id="cart-btn" type = "button" class = "btn position-relative">
+                <i class = "fa fa-shopping-cart"></i>
+                <span id="cart-item-count" class = "position-absolute top-0 start-100 translate-middle badge bg-danger">0</span>
+            </button>
+             <!-- shopping-cart -->
+             <div id="shopping-cart" class="cart-sidebar" style="display:none;">
+                <div  class="cart-header d-flex">
+                  <h3 style="font-family:fantasy;">Alışveriş Sepeti</h3>
+                 
+                  <button id="cart-close" class="btn  position-relative ">Kapat</button>
+                </div>
+                <ul id="cart-items">
+                </ul>
+                <div class="cart-footer">
+                  <button id="cart-checkout" class="btn btn-success">Ödeme Yap</button>
+                  <button id="cart-reset" class="btn btn-danger">Sepeti Sıfırla</button>
+                </div>
+              </div>
+              
+              
+
+            
+            <!-- shopping-cart -->
+            
+            <button type = "button" class = "btn position-relative">
+                <i class = "fa fa-heart"></i>
+                <span class = "position-absolute top-0 start-100 translate-middle badge bg-danger">6</span>
+            </button>
+            <button type = "button" class = "btn position-relative">
+                <i class = "fa fa-search"></i>
+            </button>
+            <div class="log   d-sm-none d-lg-flex">
+                <h5><a href="kayit-giris.html">Giriş</a></h5>
+                <hr> 
+                <h5><a href="">Kayıt</a></h5>
+            </div>
+            
+        </div>
+        
+
+        <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+            <span class = "navbar-toggler-icon"></span>
+        </button>
+
+        <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+            <ul class = "navbar-nav mx-auto text-center">
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "index.html">Anasayfa</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "cocuk.html">Çocuk</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "kadin.html">kadın</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "erkek.html">erkek</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "#iletisim">İletİşİm</a>
+                </li>
+                <li class = "nav-item px-2 py-2 border-0">
+                    <a class = "nav-link text-uppercase text-dark" href = "#hakkimizda">hakkımzıda</a>
+                </li>
+                
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+<!-- end of navbar -->
+<!-- sidebar -->
+<section    id="sidebar">
+    <div style="position:-webkit-sticky;  scroll-snap-stop: 100px ; z-index: 1; color: rgb(0, 0, 0); background-color:white; width: 200px;height: 320px; " class="sidebar">
+        
+        <h3>Filtre</h3>
+        <div class="filter-group">
+          <h4>Tür</h4>
+          <div class="form-group">
+            <input type="checkbox" id="type-dress">
+            <label for="type-dress">Sweatshirt</label>
+            <br>
+            <input type="checkbox" id="type-shirt">
+            <label for="type-shirt">Eşofman</label>
+            <br>
+            <input type="checkbox" id="type-pants">
+            <label for="type-pants">Pantolon</label>
+            <br>
+            <input type="checkbox" id="type-shorts">
+            <label for="type-shorts">Şort</label>
+            <br>
+            <input type="checkbox" id="type-jacket">
+            <label for="type-jacket">Mont</label>
+          </div>
+        </div>
+        <div class="filter-group">
+          <h4>Renk</h4>
+          <div class="form-group">
+            <input type="checkbox" id="color-red">
+            <label for="color-red">Kahverengi</label>
+            <br>
+            <input type="checkbox" id="color-blue">
+            <label for="color-blue">Mavi</label>
+            <br>
+            <input type="checkbox" id="color-green">
+            <label for="color-green">Pembe</label>
+            <br>
+            <input type="checkbox" id="color-black">
+            <label for="color-black">Siyah</label>
+            <br>
+            <input type="checkbox" id="color-white">
+            <label for="color-white">Beyaz</label>
+          </div>
+        </div>
+        <div class="filter-group">
+          <h4>Beden</h4>
+          <div class="form-group">
+            <select style="width: 180px;" id="size-select">
+                <option value="">Tüm Bedenler</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+          </div>
+        </div>
+        <button class="btn btn-primary m-1" id="filter-btn">Filtrele</button>
+        <button class="btn btn-secondary m-1" id="clear-btn">Temizle</button>
+      </div>
+       
+        
+      </div>
+</section>
+<!-- sidebar finish -->
+<!-- collection start -->
+<div style="position: relative; top: 200px;"  class = "images-container mt-4 row gx-0 gy-3">
+    <div  class = "image-card col-md-6 col-lg-4 col-xl-3 p-2"data-type="Eşofman" data-color="Kahverengi" data-size="M">
+        <div class = "clothes-img position-relative">
+            <a class="hov-res " href=""><img src = "kadın-img/kıyafet-kadın-4.jpg"  class = "w-100"></a>
+            
+        </div>
+        <div class = "text-center">
+            <div class = "rating mt-3">
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+            </div>
+            <p class = "text-capitalize my-1">Lastikli iplik Şardonlu Eşofman Alt</p>
+            <span class = "fw-bold" style="color: black;" >₺200</span>
+            <button data-product="Lastikli Üçiplik Şardonlu Eşofman Alt" class="add-to-cart btn btn-danger position-relative    w-100 d-block" >Sepet Ekle</button>
+        </div>
+    </div>
+
+    <div class = "image-card clothes-list col-md-6 col-lg-4 col-xl-3 p-2 "data-type="Eşofman" data-color="Siyah" data-size="L">
+        <div class = "clothes-img position-relative">
+           <a class="hov-res" href=""> <img src = "kadın-img/kıyafet-kadın-5.jpg"  class = "w-100"></a>
+            
+        </div>
+        <div class = "text-center">
+            <div class = "rating mt-3">
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+               
+            </div>
+            <p class = "text-capitalize my-1">Paçası Lastikli Eşofman Altı</p>
+            <span class = "fw-bold" style="color: black;" >₺199</span>
+            <button data-product="Paçası Lastikli Eşofman Altı" class="add-to-cart btn btn-danger position-relative w-100 d-block" >Sepet Ekle</button>
+        </div>
+    </div>
+
+    <div class = "image-card col-md-6 col-lg-4 col-xl-3 p-2"data-type="Pantolon" data-color="Mavi" data-size="M">
+        <div class = "clothes-img position-relative">
+            <a class="hov-res" href=""><img src = "kadın-img/kıyafet-kadın-26jpg.webp" class = "w-100"></a>
+           
+        </div>
+        <div class = "text-center">
+            <div class = "rating mt-3">
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+            </div>
+            <p class = "text-capitalize my-1">Yüksek Bel Likralı Pantolon</p>
+            <span class = "fw-bold" style="color: black;" >₺200</span>
+            <button data-product="Yüksek Bel Likralı Pantolon" class="add-to-cart btn btn-danger position-relative    w-100 d-block" >Sepet Ekle</button>
+        </div>
+    </div>
+
+    <div class = "image-card col-md-6 col-lg-4 col-xl-3 p-2" data-type="Sweatshirt" data-color="Beyaz" data-size="XL">
+        <div class = "clothes-img position-relative">
+            <a class="hov-res" href=""><img src = "kadın-img/kıyafet-kadın-6.jpg"  data-filter="yeni" class = "w-100"></a>
+           
+        </div>
+        <div class = "text-center">
+            <div class = "rating mt-3">
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                
+            </div>
+            <p class = "text-capitalize my-1">Nakışlı Kulaklı Sweat</p>
+            <span class = "fw-bold" style="color: black;" >₺190</span>
+            <button data-product="akışlı Kulaklı Sweat" class="add-to-cart btn btn-danger position-relative    w-100 d-block" >Sepet Ekle</button>
+        </div>
+    </div>
+
+    <div class = "image-card col-md-6 col-lg-4 col-xl-3 p-2" data-type="Sweatshirt" data-color="Siyah" data-size="S">
+        <div class = "clothes-img position-relative">
+            <a class="hov-res" href=""><img src = "kadın-img/kıyafet-kadın-7.jpg" class = "w-100"></a>
+           
+        </div>
+        <div class = "text-center">
+            <div class = "rating mt-3">
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+            </div>
+            <p class = "text-capitalize my-1">Bağlamalı Crop Üçiplik Sweat</p>
+            <span class = "fw-bold" style="color: black;" >₺150</span>
+            <button data-product="Bağlamalı Crop Üçiplik Sweat" class="add-to-cart btn btn-danger position-relative    w-100 d-block" >Sepet Ekle</button>
+        </div>
+    </div>
+
+    <div class = "image-card col-md-6 col-lg-4 col-xl-3 p-2" data-type="Eşofman" data-color="Siyah" data-size="L">
+        <div class = "clothes-img position-relative">
+            <a class="hov-res" href=""><img src = "kadın-img/kıyafet-kadın-8.jpg" class = "w-100"></a>
+           
+        </div>
+        <div class = "text-center">
+            <div class = "rating mt-3">
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+            </div>
+            <p class = "text-capitalize my-1">Şardonlu Tayt</p>
+            <span class = "fw-bold" style="color: black;" >₺140</span>
+            <span data-product="Şardonlu Tayt" class="add-to-cart btn btn-danger position-relative    w-100 d-block" >Sepet Ekle</span>
+        </div>
+    </div>
+    <div class = "image-card col-md-6 col-lg-4 col-xl-3 p-2"data-type="Pantolon" data-color="Kahverengi" data-size="S">
+        <div class = "clothes-img position-relative">
+            <a class="hov-res" href=""><img src = "kadın-img/kıyafet-kadın-9.jpg" class = "w-100"></a>
+           
+        </div>
+        <div class = "text-center">
+            <div class = "rating mt-3">
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+            </div>
+            <p class = "text-capitalize my-1">Palazzon Kumaş Pantolon </p>
+            <span class = "fw-bold" style="color: black;" >₺219</span>
+            <span data-product="Palazzon Kumaş Pantolon " class="add-to-cart buton btn btn-danger position-relative w-100 d-block" >Sepet Ekle</span>
+        </div>
+    </div>
+    <div class = "image-card col-md-6 col-lg-4 col-xl-3 p-2"data-type="Şort" data-color="Siyah" data-size="L">
+        <div class = "clothes-img position-relative">
+            <a class="hov-res"  href=""><img src = "kadın-img/kıyafet-kadın-10.jpg" class = "w-100"></a>
+           
+        </div>
+        <div class = "text-center">
+            <div class = "rating mt-3">
+                <span class = "text-danger"><i class = "fas fa-star"></i></span> 
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+            </div>
+            <p class = "text-capitalize my-1">Ekose Tüvit Etek</p>
+            <span class = "fw-bold" style="color: black;" >₺300</span>
+            <span data-product="Ekose Tüvit Etek" class="add-to-cart btn btn-danger position-relative    w-100 d-block" >Sepet Ekle</span>
+        </div>
+    </div>
+    <div class = "image-card col-md-6 col-lg-4 col-xl-3 p-2"data-type="Pantolon" data-color="Siyah" data-size="M">
+        <div class = "clothes-img position-relative">
+            <a class="hov-res" href=""><img src = "kadın-img/kıyafet-kadın-11.jpg" class = "w-100"></a>
+           
+        </div>
+        <div class = "text-center">
+            <div class = "rating mt-3">
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+            </div>
+            <p class = "text-capitalize my-1">Zincirli İspanyol Paça Pantolon</p>
+            <span class = "fw-bold" style="color: black;" >₺179</span>
+            <span data-product="Zincirli İspanyol Paça Pantolon" class="add-to-cart btn btn-danger position-relative    w-100 d-block" >Sepet Ekle</span>
+        </div>
+    </div>
+    <div class = "image-card col-md-6 col-lg-4 col-xl-3 p-2"data-type="Mont" data-color="Pembe" data-size="S">
+        <div class = "clothes-img position-relative">
+            <a class="hov-res" href=""><img src = "kadın-img/kıyafet-kadın-12.jpg" class = "w-100"></a>
+           
+        </div>
+        <div class = "text-center">
+            <div class = "rating mt-3">
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+            </div>
+            <p class = "text-capitalize my-1">Pembe Mont Kadın</p>
+            <span class = "fw-bold" style="color: black;" >₺400</span>
+            <span data-product="Pembe Mont Kadın" class="add-to-cart btn btn-danger position-relative    w-100 d-block" >Sepet Ekle</span>
+        </div>
+    </div>
+    <div class = "image-card col-md-6 col-lg-4 col-xl-3 p-2"data-type="Mont" data-color="Pembe" data-size="M">
+        <div class = "clothes-img position-relative">
+            <a class="hov-res" href=""><img src = "kadın-img/kıyafet-kadın-13.jpg" class = "w-100"></a>
+           
+        </div>
+        <div class = "text-center">
+            <div class = "rating mt-3">
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+            </div>
+            <p class = "text-capitalize my-1">Kürklü Şişme Mont</p>
+            <span class = "fw-bold" style="color: black;" >₺500</span>
+            <span data-product="Kürklü Şişme Mont" class="add-to-cart btn btn-danger position-relative    w-100 d-block" >Sepet Ekle</span>
+        </div>
+    </div>
+    <div class = "image-card col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class = "  clothes-img position-relative">
+            <a class="hov-res" href=""><img src = "kadın-img/kıyafet-kadın-14.jpg" class = "w-100"></a>
+           
+        </div>
+        <div class = "text-center">
+            <div class = "rating mt-3">
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+            </div>
+            <p class = "text-capitalize my-1">Pıercıng Detay Kep Bayan Şapka</p>
+            <span class = "fw-bold" style="color: black;" >₺159</span>
+            <span data-product="Pıercıng Detay Kep Bayan Şapka" class="add-to-cart btn btn-danger position-relative    w-100 d-block" >Sepet Ekle</span>
+            
+        </div>
+    </div>
+
+    
+    
+    
+    
+</div>
+
+    
+    
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- --------- Footer ---------- -->
+ <footer style="position: relative; top: 250px;"   class="bg-light text-dark pt-5 pb-4">
+    <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-info">Hakkımızda</h5>
+                <hr class="mb-4">
+                <p>Modaya uygun olarak tasarladığmız kıyafetleri BUYIDAL markamızda sizlere sunuyoruz.İsteğinize özel kıayfet tasarımı yapabilmekle birlikte markamız altında güvence sağlıyoruz.</p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 id="iletisim" class="text-uppercase mb-4 font-weight-bold text-info">İletişim</h5>
+                <hr class="mb-4">
+                <ul class="list-unstyled">
+                    <li>Email: burakyigitdal@gmail.com</li>
+                    <li><i class="bi bi-whatsapp"></i>Tel: 555-555-5555</li>
+                    <li>Adres: 35220 Konak/İzmir</li>
+                  </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-info">Linkler</h5>
+                <hr class="mb-4">
+                <ul style="text-decoration: ;" id="footer-link" class="footer-link list-unstyled">
+                  <li><a href="index.html" class="text-dark" >Anasayfa</a></li>
+                  <li><a href="erkek.html" class="text-dark ">Erkek</a></li>
+                  <li><a href="kadin.html" class="text-dark ">Kadın</a></li>
+                  <li><a href="cocuk.html" class="text-dark ">Çocuk</a></li>
+                  <li><a id="hakkimizda" class="text-dark">Hakkımızda</a></li>
+                  
+                </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-info">Bizi Takip Edin</h5>
+                <hr class="mb-4">
+                <ul id="footer-link" class="footer-link list-unstyled">
+                    <li><a href="#" class="text-dark" ><i class="bi bi-instagram"></i>  Instagram</a></li>
+                    <li><a href="#" style="position: relative; right: 2px ;" class="text-dark "><i class="bi bi-facebook"></i>  Facebook</a></li>
+                    <li><a href="#" class="text-dark "><i style="position: relative; right: 8px;" class="bi bi-linkedin"></i>  Linkedin</a></li>
+                  
+                  
+                  
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                  <p class="text-center">Copyright &copy; 2023 BUYIDAL</p>
+                </div>
+
+            
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script src = "script.js"></script>
+<script src="shopping-cart.js"></script>
+</body>
+</html>

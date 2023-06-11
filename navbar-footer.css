@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+ }
+ body{
+font-family: 'Anton', sans-serif;
+font-family: 'Kaisei Tokumin', serif;
+font-family: 'Poppins', sans-serif;
+
+    
+
+ }
+ /* navbar start */
+ 
+.nav-logo{
+    width: 300px;
+    position: relative;
+    right: 50px;
+    
+    
+    
+}
+
+
+
+
+
+.log{
+    display: flex;
+    position: relative;
+    
+    
+    
+}
+.log a{
+    font-size: 14px;
+    padding-left: 8px;
+    text-decoration: none;
+    color: rgb(135, 95, 20);
+
+}
+.navbar{
+    box-shadow: 0 3px 9px 3px rgb(0, 0, 20);
+}
+/* navbar finsih */
+/* footer start */
+ 
+/* footer start */
+ footer{
+    position: -webkit-sticky;
+    
+ }
+a{
+    text-decoration: none;
+
+}
+ul li a:hover{
+    color: red !important;
+}
